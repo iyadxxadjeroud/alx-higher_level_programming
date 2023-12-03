@@ -4,5 +4,4 @@ def element_at(my_list, idx):
         return None
     elif idx >= len(my_list):
         return None
-    else:
-        print("Element at index {:d} is {}".format(idx, my_list(idx)))
+    print("Element at index {:d} is {}".format(idx, my_list(idx)))
