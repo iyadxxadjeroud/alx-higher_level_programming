@@ -3,9 +3,9 @@ def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
     total = 0
-    number = 0
-    numbers = {'I' : 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 'D' : 500, 'M' : 1000}
+    num = 0
+    digits = {'I' : 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 'D' : 500, 'M' : 1000}
     for r in reversed(roman_string):
-        number = numbers[r]
-        total += number if total < number * 5 else -number
+        num = digits[r]
+        total += num if total < num * 5 else -num
     return total
