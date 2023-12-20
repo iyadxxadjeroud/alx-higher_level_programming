@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Define a Magicclass matching a bytecode already exist by ALX"""
 
+
 import math
+
 
 class Magicclass:
     """Represent a Circle"""
@@ -16,7 +18,7 @@ class Magicclass:
     def area(self):
         """Return the area of the magicclass"""
         return (self.__radius ** 2 * math.pi)
-    
+
     def circumference(self):
         """Return the circumference of the magicclass"""
         return (2 * math.pi * self.__radius)

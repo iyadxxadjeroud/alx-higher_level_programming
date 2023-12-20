@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Square module."""
 
+
 class Square:
     """Defines a square."""
 
     def __init__(self, size):
         """Constructors
-        
+
         arguments:
             size: length of a side of a square
         """
@@ -21,7 +22,7 @@ class Square:
             ValueError: If is negative
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -36,7 +37,7 @@ class Square:
             The size squared
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """Print the square with the character '#'"""
         for i in range(self.__size):

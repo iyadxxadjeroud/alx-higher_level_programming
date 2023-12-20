@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Square module."""
 
+
 class Square:
     """Defines a square."""
 
@@ -18,7 +19,7 @@ class Square:
     def size(self):
         """Get/set The current size of square."""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -31,7 +32,7 @@ class Square:
     def position(self):
         """Get/set The current position of square."""
         return self.position
-    
+
     @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
@@ -47,13 +48,13 @@ class Square:
             The size squared
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """Print the square with the character '#'"""
         if self.__size == 0:
             print("")
             return
-        
+
         [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]

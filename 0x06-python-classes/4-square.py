@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Square module."""
 
+
 class Square:
     """Defines a square."""
 
     def __init__(self, size):
         """Constructors
-        
+
         arguments:
             size: length of a side of a square
         """
@@ -21,6 +22,7 @@ class Square:
             ValueError: If is negative
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -35,21 +37,3 @@ class Square:
             The size squared
         """
         return self.__size ** 2
-    
-    def __eq__(self, other):
-        return self.__area() == other.area()
-    
-    def __ne__(self, other):
-        return self.__area() != other.area()
-    
-    def __gt__(self, other):
-        return self.__area() > other.area()
-    
-    def __ge__(self, other):
-        return self.__area() >= other.area()
-    
-    def __lt__(self, other):
-        return self.__area() < other.area()
-    
-    def __le__(self, other):
-        return self.__area() <= other.area()
