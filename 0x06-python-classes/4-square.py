@@ -21,7 +21,7 @@ class Square:
             TypeError: If is not an integer
             ValueError: If is negative
         """
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -37,4 +37,4 @@ class Square:
         Returns:
             The size squared
         """
-        return self.__size ** 2
+        return (self.__size ** 2)

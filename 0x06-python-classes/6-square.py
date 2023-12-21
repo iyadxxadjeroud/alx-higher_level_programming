@@ -18,20 +18,20 @@ class Square:
     @property
     def size(self):
         """Get/set The current size of square."""
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
-        if value < 0:
+        elif value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
 
     @property
     def position(self):
         """Get/set The current position of square."""
-        return self.position
+        return (self.position)
 
     @position.setter
     def position(self, value):
@@ -47,7 +47,7 @@ class Square:
         Returns:
             The size squared
         """
-        return self.__size ** 2
+        return (self.__size ** 2)
 
     def my_print(self):
         """Print the square with the character '#'"""
