@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for matrix_divided method."""
+"""Module for matrix_divided method.
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+"""
 
 
 def matrix_divided(matrix, div):
@@ -31,6 +33,7 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix (list of lists) " +
                                 "of integers/floats")
     return [[round(x / div, 2) for x in row] for row in matrix]
+
 
 if __name__ == "__main__":
     import doctest
