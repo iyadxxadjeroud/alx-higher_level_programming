@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """Adds two integers.
-    python3 -c 'print(__import__("my_module").my_function.__doc__)'
+
     Args:
         a: the first integer.
         b: the second integer, default 98.

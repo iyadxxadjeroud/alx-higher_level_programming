@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for matrix_mul method."""
+"""Module for matrix_mul method.
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+"""
 
 
 def matrix_mul(m_a, m_b):
@@ -77,6 +79,7 @@ def matrix_mul(m_a, m_b):
             res[i].append(c)
 
     return res
+
 
 if __name__ == "__main__":
     import doctest
