@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for say_my_name method."""
+"""Module for say_my_name method.
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+"""
 
 
 def say_my_name(first_name, last_name=""):
@@ -19,6 +21,7 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     print("My name is {:s} {:s}".format(first_name, last_name))
+
 
 if __name__ == "__main__":
     import doctest
