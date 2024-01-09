@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for text_indentation method."""
+"""Module for text_indentation method.
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+"""
 
 
 def text_indentation(text):

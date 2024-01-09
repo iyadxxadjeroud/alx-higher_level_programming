@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for print_square method."""
+"""Module for print_square method.
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+"""
 
 
 def print_square(size):

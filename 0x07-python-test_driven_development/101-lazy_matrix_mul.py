@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 This module multiply 2 matricies using numpy module
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
 """
 import numpy
 
